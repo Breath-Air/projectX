@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamBox{
+    @apply relative w-[7px]  h-[7px] cursor-pointer rounded-[50%] p-8 bg-[#f1f1f1] mr-20;
+}
+
+.lineTop{
+    @apply m-0 m-auto absolute block w-[35px] h-[2px] rounded bg-black rotate-0 left-0 right-0 transition-all top-[2.5rem]
+}
+
+.lineBottom{
+    @apply m-0 m-auto absolute block w-[35px] h-[2px] rounded bg-black rotate-0 left-0 right-0 transition-all bottom-[2.5rem]
+}
+
+.lineTop.spin{
+    @apply top-[2.4rem] rotate-[135deg] bg-black
+}
+
+.lineBottom.spin{
+    @apply bottom-[2rem] rotate-[225deg] bg-black
+}
